@@ -2,10 +2,7 @@ import json
 import pennylane as qml
 import pennylane.numpy as np
 
-# Step 1: initialize a device
 dev = qml.device("default.qubit")
-
-# Step 2: Add a decorator below
 
 @qml.qnode(dev)
 def simple_circuit(angle):
